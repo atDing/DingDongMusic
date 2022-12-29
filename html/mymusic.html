@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="../css/my.css" />	
+	<script type="text/javascript">
+		function select(){
+			
+		}
+		function Insert(){
+			var rows =  document.getElementById('table').rows.length ; //获取表格行数
+			if(rows=="20"){   //业务需求最多添加至5行
+				return;
+			}
+			var newTr = table.insertRow();//添加一行
+			var newTd0 = newTr.insertCell();//第一列
+	//		 newTd0.setAttribute("align","center");//添加一个样式
+			newTd0.innerHTML = '<input type="text" name="measuringrange" style="width:396px;height:40px;"  value=""/>';
+			var newTd1 = newTr.insertCell();//第二列
+			newTd1.innerHTML = '<input type="text" name="measuringrange" style="width:396px;height:40px;"  value=""/>';
+			var newTd2 = newTr.insertCell();//第三列
+			newTd2.innerHTML = '<input type="text" name="uncertainty" style="width:196px;height:40px;"  value=""/>';
+			var newTd3 = newTr.insertCell();//第四列
+			newTd3.innerHTML = '<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button><button style="height:30px;width:60px;"onclick="Delete(this)">移除</button>';
+		}
+		function Delete(obj){
+			
+				var index=obj.parentNode.rowIndex;
+				var table = document.getElementById("table");
+				table.deleteRow(index);
+		}
+
+	</script>
+</head>
+<body>
+	<div class="top">
+		<ul>
+			<li><img src="http://p1.music.126.net/8atkUbbsnkdA3JvZL2X9qw==/109951166336756111.jpg?param=140y140"></li>
+			<li><span>&nbsp;我喜欢的音乐</span></li>
+			<li>
+<!--		<form>
+					<input type="text" style="height:30px;width:200px;margin-left:30px;">
+					<button onclick="select()">查询</button>
+				</form>  -->
+		</li>
+		</ul>
+	</div>
+	<div class="list">
+		<table border="1">
+			<tr>
+				<td>歌名</td>
+				<td>歌手</td>
+				<td>时长</td>
+				<td>操作</td>
+			</tr>
+		</table>
+		<table border="1" id="table">
+			
+			<tr>
+				<td id="musicName1">Trouble Maker(中文填词版)</td>
+				<td id="singer1">封茗囧菌</td>
+				<td id="time1">03:41</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1366724720&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!--  	<button style="height:30px;width:60px;margin-right:30px;">修改</button>-->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName2">情绪收割机</td>
+				<td id="singer2">侯东Holdon</td>
+				<td id="time2">02:28</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1906009576&auto=1&height=66" >
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!--  	<button style="height:30px;width:60px;margin-right:30px;">修改</button>-->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName3">With U</td>
+				<td id="singer3">杨胖雨</td>
+				<td id="time3">03:36</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1380720351&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName3">悠哉山歌大王</td>
+				<td id="singer3">穗乃果奶</td>
+				<td id="time3">01:22</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1380720351&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName4">萤火虫</td>
+				<td id="singer4">GAI周延</td>
+				<td id="time4">02:52</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=541480238&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName5">小年兽</td>
+				<td id="singer5">程嘉敏</td>
+				<td id="time5">02:38</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1346758452&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName6">YELLOW</td>
+				<td id="singer6">火西肆</td>
+				<td id="time6">03:03</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1381167312&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName7">与你有关</td>
+				<td id="singer7">泠鸢yousa</td>
+				<td id="time7">03:41</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1842950967&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName8">情绪收割机（1）</td>
+				<td id="singer8">侯东Holdon</td>
+				<td id="time8">02:28</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1906009576&auto=1&height=66" >
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!--  	<button style="height:30px;width:60px;margin-right:30px;">修改</button>-->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName9">With U（1）</td>
+				<td id="singer9">杨胖雨</td>
+				<td id="time9">03:36</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1380720351&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName10">悠哉山歌大王（1）</td>
+				<td id="singer10">穗乃果奶</td>
+				<td id="time10">01:22</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=1380720351&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+			<tr>
+				<td id="musicName11">萤火虫（1）</td>
+				<td id="singer11">GAI周延</td>
+				<td id="time11">02:52</td>
+				<td>
+					<a href="//music.163.com/outchain/player?type=2&id=541480238&auto=1&height=66">
+						<button style="height:30px;width:60px;margin-left:5px;margin-right:30px;">播放</button>
+					</a>
+				<!-- 	<button style="height:30px;width:60px;margin-right:30px;">修改</button> -->
+					<button style="height:30px;width:60px;" onclick="Delete(this)">移除</button>
+				</td>
+			</tr>
+		
+		</table>
+		<button style="width:40px;height:30px;margin-top:1px;" onclick="Insert()"><font size="6">+</font></button>
+	</div>
+</body>
+</html>

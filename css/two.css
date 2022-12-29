@@ -1,0 +1,124 @@
+@charset "UTF-8";
+*{
+	margin:0px;		/*边界*/
+	padding:0px;	/*填充*/
+}
+
+
+/*第二张*/
+/*热门推荐 */
+.two-div{
+	width:1235px;
+	height:800px;
+	margin-left:150px;
+	background:linear-gradient(#f2f2f2, #fafafa);
+}
+.two-div .v-hd2 { 
+/*	width:1230px;	*/
+	height: 33px; 
+	padding:10px 10px 0px 0px;
+	border-bottom: 2px solid rgb(193, 13, 12); 
+}
+.v-hd2 span{
+	color:black;
+	text-decoration:none;		/*下划线*/
+}
+.v-hd2 .f-tdn{
+	float:left;
+	font-size: 23px;
+	line-height: 28px;
+	
+}
+.v-hd2 .tab { 
+	float: left; 
+	margin: 7px 0px 0px 20px;
+}
+
+.v-hd2 .tab .line { 
+	margin: 0px 10px; 
+	color: rgb(204, 204, 204); 
+}
+.s-fc3, span.s-fc3:hover { 
+	font-size: 15px;
+	text-decoration:underline;
+	color: rgb(102, 102, 102); 
+}
+
+.picdiv{
+	width:105%;
+/**/	height:800px;
+	margin-top:30px;
+	margin-left:-25px;
+	padding: 10px 10px 0px 0px; 
+	background-position: -225px -156px; 
+/*	border: 2px solid blue; 	*/
+}
+.picdiv a:hover{
+	text-decoration:underline;
+}
+/*大图片和文字的div*/
+.picdiv .split{				
+	width:175px;
+	height:215px;
+	margin:10px 38px 20px 38px;
+	float:left;
+}
+.picdiv li{
+	position:absolute;
+	width:170px;
+	height:170px;
+	margin-bottom:4px;
+	list-style:none;		/*消除li列表前面的小点点*/
+	overflow: hidden;		/*隐藏多余部分*/
+	float:left;
+}
+.picdiv .pic-out{		/*大图片*/
+/*	z-index: 1;		*/
+	width: 170px;
+	height: 170px;
+	margin-bottom:4px;
+	position: absolute;
+	transition: all .5s linear;
+}
+
+.picdiv .pic-in{
+	width: 60px;
+	height: 60px;
+	margin-top:55px;
+	margin-left:55px;
+/*	z-index: 2;			第二层(第一层是在最下面)*/
+	opacity: 0;/*0~1透明度，1为不透明，0为完全透明*/
+	transition: all .5s linear;
+}
+/*
+.picdiv .earlisn{
+	width:30px;
+	height:30px;
+	z-index: 3;	
+	opacity:1;
+	border:2px solid blue;
+	transition: all .5s linear;
+}*/
+.picdiv li:hover .pic-out{
+	width:185px;
+	height:185px;
+	transform:scale(1);
+}
+.picdiv li:hover .pic-in{
+	width:75px;
+	height:75px;
+	opacity: 1;
+	transform:scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+

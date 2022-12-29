@@ -1,0 +1,237 @@
+@charset "UTF-8";
+*{
+	margin:0px;		/*边界*/
+	padding:0px;	/*填充*/
+}
+/*第三张*/
+/*新碟首发 */
+
+.three-div{
+	position: relative;
+	width:1235px;
+	height:450px;
+	margin-top:20px;
+	margin-left:150px;
+	background:linear-gradient(#f2f2f2, #fafafa);
+}
+.three-div .v-hd2 { 
+/*	width:1230px;	*/
+	height: 33px; 
+/*	padding:10px 10px 0px 0px;*/
+	border-bottom: 2px solid rgb(193, 13, 12); 
+}
+.v-hd2 a{
+	color:black;
+	text-decoration:none;		/*下划线*/
+}
+.v-hd2 .f-tdn{
+	float:left;
+	font-size: 23px;
+	line-height: 28px;
+	
+}
+
+.three-div:hover .picdiv-left {
+	opacity: 1;
+	transition: all .5s linear;
+/*	direction:rtl; 
+	unicode-bidi:bidi-override;*/
+}
+.three-div:hover .picdiv-right{
+	opacity: 1;
+}
+.picdiv-left{
+	width:60px;
+	float:left;
+	opacity: 0;
+	margin:150px 0 0 0;
+}
+.picdiv-right{
+	width:60px;
+	float:right;
+	opacity: 0;
+	margin:-200px 0 0 0;
+}
+.lbmain{		/*外*/
+position:relative;
+	height: 270px;
+	width: 1080px;
+	margin-top:50px;
+	margin-left:60px;
+	background:linear-gradient(#f2f2f2, #fafafa);
+/**/	overflow: hidden;
+}
+.lunbo:hover{
+	animation-play-state: paused;
+}
+.lunbo{		/*内*/
+	height: 270px;
+	width: 3100px;
+	float:left;
+	margin-top: 0px;
+	position: relative;	
+/**/	animation:32s move infinite;
+}
+
+@keyframes move{
+	0%{
+	
+	}
+	25%{
+	transform:translate(0px);
+	}
+	25%{
+	transform:translate(-650px);
+	}
+	50%{
+	transform:translate(-1300px);
+	}
+	100%{
+	transform:translate(-1950px);
+	}
+}
+.lunbomain .split{
+	width:195px;
+	height:250px;
+	margin:10px 8px 20px 10px;
+	float:left;
+}
+.lunbo li{
+	position:absolute;
+	width:190px;
+	height:200px;
+	margin-bottom:4px;
+	list-style:none;		/*消除li列表前面的小点点*/
+	overflow: hidden;		/*隐藏多余部分*/
+	float:left;
+}
+.lunbomain .pic-out{	/*大图片*/
+	
+/*	z-index: 1;		*/
+	width: 190px;
+	height: 200px;
+	margin-bottom:4px;
+	position: absolute;
+	transition: all .5s linear;
+}
+
+.lunbomain .pic-in{
+	width: 60px;
+	height: 60px;
+	margin-top:55px;
+	margin-left:55px;
+/*	z-index: 2;			第二层(第一层是在最下面)*/
+	opacity: 0;/*0~1透明度，1为不透明，0为完全透明*/
+	transition: all .5s linear;
+}
+.lunbomain li:hover .pic-out{
+	width:200px;
+	height:210px;
+	transform:scale(1);
+}
+.lunbomain li:hover .pic-in{
+	width:75px;
+	height:75px;
+	opacity: 1;
+	transform:scale(1);
+}
+
+.lunbomain .split  a{
+	text-decoration:none;
+}
+.lunbomain a:hover{
+	text-decoration:underline;
+}
+
+/*
+.slider input{
+	display:inline-block;
+	width:13px;
+	height:13px;
+	opacity: 0.7;
+	background:url("http://s2.music.126.net/style/web2/img/ie6/dot.png");
+}
+*/
+
+/**/
+.slider input{
+	display:none;
+}
+
+/*
+.slider{
+	width:120px;height:30px;
+	margin:30px auto;
+	border:2px solid blue;
+}
+.slider label[for^="button"]{
+	position:absolute;
+	background-color: pink;
+	cursor:pointer;
+	borrder-radius:50%;
+	transition:3s;
+}*/
+/*
+.slider label{
+	position:absolute;
+	width:13px;
+	height:13px;
+	margin-top:360px;
+	cursor:pointer;
+	border:2px solid #808080;
+	border-radius:50%;
+}
+ label[for="button1"]{
+	left:40%;
+}
+label[for="button2"]{
+	left:45%;
+}
+label[for="button3"]{
+	left:50%;
+}
+label[for="button4"]{
+	left:55%;
+}
+
+#button1:checked ~  .split{
+	background-color:green;
+	margin-left:0px;
+}
+#button2:checked ~ ul{
+	background-color:pink;
+	margin-left:-734px;
+}
+#button3:checked ~ .lbmain{
+	background-color:red;
+	margin-left:-1464px;
+}
+#button4:checked ~ .split{
+	background-color:blue;
+	margin-left:-2194px;
+}
+#dots4:checked ~.lbmain{
+	margin-left:2924px;
+}
+
+#button1:checked ~ label[for="button1"]{
+	background-color:rgb(255,100,0);
+}
+#button2:checked ~ label[for="button2"]{
+	background-color:rgb(255,100,0);
+}
+#button3:checked ~ label[for="button3"]{
+	background-color:rgb(255,100,0);
+}
+#button4:checked ~ label[for="button4"]{
+	background-color:rgb(255,100,0);
+}
+
+
+*/
+
+
+
+
+
+

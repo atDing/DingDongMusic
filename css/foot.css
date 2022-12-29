@@ -1,0 +1,75 @@
+@charset "UTF-8";
+*{
+	margin:0px;		/*边界*/
+	padding:0px;	/*填充*/
+/**/	margin:0 auto;
+}
+.foot{
+	width:100%;
+	height:150px;
+	margin-top:20px;
+	background-color:rgb(210,210,210);
+}
+.footmain{
+	width:1235px;
+	height:100%;
+	margin-left:150px;
+}
+/*
+.foot a {
+	color: #7f7f7f;
+	text-decoration: none;
+}
+
+.foot .three td:hover {
+	color: #31C270;
+}
+
+
+.foot .right{
+	height:30px;
+	margin-top:10px;
+	border:2px solid red;
+	
+}*/
+.foot p{
+	height:25px;
+	padding-top:8px;
+	font-size:14px;
+}
+.foot .s-fc4{
+	color: #7f7f7f;
+	margin-left:6px;
+	text-decoration: none;
+}
+.foot a:hover{
+	text-decoration:underline
+}
+.foot .line{
+	color: #7f7f7f;
+	margin-left:6px;
+}
+
+.foot .sepspan{
+	color: #000040;
+	margin-left:6px;
+}
+.foot .span{
+	color: #000040;
+	margin-left:20px;
+	margin-right:-2px;
+}
+.foot .alinks-fc3{
+	color: #000040;
+	margin-left:6px;
+	margin-right:20px;
+}
+.foot .police-logo{
+	width: 14px;
+    height: 14px;
+    background: url(https://s2.music.126.net/style/web2/img/3rd/police.png?8a26f0abb68472a7fabc33a8bc2f7754) no-repeat;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: -2px;
+}
